@@ -1,0 +1,58 @@
+create table resturantf(billidno number(10),
+custname varchar2(10),
+phno number(12),
+amount number(10));
+create sequence billidno
+start with 100001
+increment by 1
+minvalue 100001
+maxvalue 100555
+cycle;
+insert into resturantf values(billidno.nextval,'chaithu',123,100);
+insert into resturantf values(billidno.nextval,'babblu',321,500);
+insert into resturantf values(billidno.nextval,'chinnu',456,600);
+insert into resturantf values(billidno.nextval,'ashi',654,800);
+insert into resturantf values(billidno.nextval,'chandu',987,500);
+insert into resturantf values(billidno.nextval,'swetha',789,400);
+insert into resturantf values(billidno.nextval,'valli',1234,637);
+insert into resturantf values(billidno.nextval,'meghana',4321,655);
+insert into resturantf values(billidno.nextval,'latha',4567,1000);
+insert into resturantf values(billidno.nextval,'chinni',7654,900);
+select *from resturantf;
+table created.
+Sequence created.
+
+1 row(s) inserted.
+
+1 row(s) inserted.
+
+1 row(s) inserted.
+
+1 row(s) inserted.
+
+1 row(s) inserted.
+
+1 row(s) inserted.
+
+1 row(s) inserted.
+
+1 row(s) inserted.
+
+1 row(s) inserted.
+
+1 row(s) inserted.
+
+Result Set 1
+BILLIDNO	CUSTNAME	PHNO	AMOUNT
+100001	chaithu	123	100
+100002	babblu	321	500
+100003	chinnu	456	600
+100004	ashi	654	800
+100005	chandu	987	500
+100006	swetha	789	400
+100007	valli	1234	637
+100008	meghana	4321	655
+100009	latha	4567	1000
+100010	chinni	7654	900
+Download CSV
+10 rows selected.
